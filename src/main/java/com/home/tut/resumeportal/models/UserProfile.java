@@ -1,6 +1,7 @@
 package com.home.tut.resumeportal.models;
 
 import com.home.tut.resumeportal.enums.ResumeTheme;
+import lombok.ToString;
 
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -8,6 +9,7 @@ import javax.persistence.Enumerated;
 import javax.persistence.Id;
 
 @Entity
+@ToString
 public class UserProfile {
 
     @Id
