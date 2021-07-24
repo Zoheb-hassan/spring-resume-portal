@@ -2,8 +2,8 @@ package com.home.tut.resumeportal;
 
 import com.home.tut.resumeportal.models.UserProfile;
 import com.home.tut.resumeportal.repository.UserProfileRepository;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,10 +13,10 @@ import java.util.Optional;
 
 @Controller
 @Slf4j
+@RequiredArgsConstructor
 public class HomeController {
 
-    @Autowired
-    private UserProfileRepository userProfileRepository;
+    private final UserProfileRepository userProfileRepository;
 
     @GetMapping("/")
     public String getHello() {
