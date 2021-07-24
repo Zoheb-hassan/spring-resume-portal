@@ -22,4 +22,10 @@ public class UserProfile {
     @Enumerated(EnumType.STRING)
     private ResumeTheme resumeTheme;
     private String resumeSummary;
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String designation;
+    private String phone;
+
 }
