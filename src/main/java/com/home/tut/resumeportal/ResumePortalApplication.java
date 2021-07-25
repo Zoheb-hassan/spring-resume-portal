@@ -1,6 +1,5 @@
 package com.home.tut.resumeportal;
 
-import com.home.tut.resumeportal.repository.UserRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;

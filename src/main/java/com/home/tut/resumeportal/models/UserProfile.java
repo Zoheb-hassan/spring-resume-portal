@@ -5,10 +5,9 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @ToString
@@ -27,5 +26,11 @@ public class UserProfile {
     private String email;
     private String designation;
     private String phone;
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @JoinColumn(name = "job_id")
+    private List<Job> jobs = new ArrayList<>();
 
+    private void addJob(Job job) {
+        jobs.add(job);
+    }
 }
