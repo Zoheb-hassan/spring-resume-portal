@@ -20,3 +20,13 @@ insert into job_responsibilities(job_id, responsibilities) values
 (2, 'Requirement Implementation & Code Reviews'),
 (3, 'Selenium Test Cases Implementation'),
 (3, 'Building Library Logic');
+
+
+insert into education(id, college, qualification, start_date, end_date, summary, education_id) values
+(1, 'A1 Engineering College', 'B.Tech(Non-Computers)', '2010-06-01', '2014-4-01', 'Bachelors Degree in Non CSE Branch', 1),
+(2, 'Parayana College', 'Intermediate Education', '2008-03-01', '2010-4-01', 'Intermediate degree in Maths, Physics & Chemistry', 1);
+
+insert into user_profile_skills(user_profile_id, skills) values
+(1, 'Spring'),
+(1, 'Hibernate'),
+(1, 'Maven');
